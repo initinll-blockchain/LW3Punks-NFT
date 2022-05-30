@@ -13,13 +13,15 @@ async function main() {
   // manually to make sure everything is compiled
   // await hre.run('compile');
 
+  const metadataURL = "ipfs://Qmbygo38DWF1V8GttM1zy89KzyZTPU2FLUzQtiDvB7q6i5/";
+
   // We get the contract to deploy
-  const Greeter = await ethers.getContractFactory("Greeter");
-  const greeter = await Greeter.deploy("Hello, Hardhat!");
+  const LW3PunksContract = await ethers.getContractFactory("LW3Punks");
+  const LW3Punks = await LW3PunksContract.deploy(metadataURL);
 
-  await greeter.deployed();
+  await LW3Punks.deployed();
 
-  console.log("Greeter deployed to:", greeter.address);
+  console.log("LW3Punks deployed to:", LW3Punks.address);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
