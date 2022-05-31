@@ -1,9 +1,9 @@
 # LW3Punks-NFT
 A NFT collection project where its metadata is stored on IPFS
 
-URL - https://crypto-devs-nft-tau.vercel.app/
+URL - https://lw3punks-nft.vercel.app/
 
-<img src="/assets/CryptoDevs-NFT.PNG" width=500 />
+<img src="/assets/LW3Punks-NFT.PNG" width=500 />
 
 # Frameworks
 <table>
@@ -25,23 +25,6 @@ Try running some of the following tasks:
 
 ```shell
 npx hardhat node
-```
-
-## Add Hardhat Local Account to MetaMask
-Add hardhat local account - 0x5FbDB2315678afecb367f032d93F642f64180aa3 to metamask wallet
-
-switch contract address from rinkeby testnet to localhost at - CryptoDevsService.ts
-
-```
-// from
-export function getContractAddress() {    
-    return Constants.CONTRACT_ADDRESS_RINKEBY;
-}
-
-// to
-export function getContractAddress() {    
-    return Constants.CONTRACT_ADDRESS_LOCALHOST;
-}
 ```
 
 ## Running front-end Svelte app
